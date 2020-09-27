@@ -4,38 +4,16 @@ namespace TeachMeSkills.DotNet.Task5
 {
     class Converter
     {
-        private decimal usd;
-        private decimal eur;
-        private decimal rub;
-
-        public Converter(decimal usd, decimal eur, decimal rub)
+        public Converter(decimal _usd, decimal _eur, decimal _rub)
         {
-            this.usd = usd;
-            this.eur = eur;
-            this.rub = rub;
+            Usd = _usd;
+            Eur = _eur;
+            Rub = _rub;
         }
 
-        public decimal Usd
-        {
-            get
-            {
-                return this.usd;
-            }
-        }
-        public decimal Eur
-        {
-            get
-            {
-                return this.eur;
-            }
-        }
-        public decimal Rub
-        {
-            get
-            {
-                return this.rub;
-            }
-        }
+        public decimal Usd { get; }
+        public decimal Eur { get; }
+        public decimal Rub { get; }
     }
     class Program
     {
@@ -69,7 +47,7 @@ namespace TeachMeSkills.DotNet.Task5
                         {
                             Console.ForegroundColor = ConsoleColor.Blue;
                             Console.WriteLine("Convertion {0:00.00} BYN -> : {1:00.00} USD, {2:00.00} EUR, {3:00.00} RUB",
-                                valueMoney, valueMoney * converter.Usd, valueMoney * converter.Eur, valueMoney * converter.Rub);
+                                valueMoney, Math.Round(valueMoney * converter.Usd, 2), Math.Round(valueMoney * converter.Eur, 2), Math.Round(valueMoney * converter.Rub, 2));
                             Console.ForegroundColor = ConsoleColor.White;
                         }
                         else
@@ -79,14 +57,13 @@ namespace TeachMeSkills.DotNet.Task5
                             Console.ForegroundColor = ConsoleColor.White;
                             isParsed = false;
                         }
-                        
                         break;
                     case 1:
                         Console.Write("Enter sum, USD : ");
                         isParsed = Decimal.TryParse(Console.ReadLine(), out valueMoney);
                         if (isParsed)
                         {
-                            Console.WriteLine("Conversion {0:00.00} USD -> BYN {1:00.00}", valueMoney, valueMoney / converter.Usd);
+                            Console.WriteLine("Conversion {0:00.00} USD -> BYN {1:00.00}", valueMoney, Math.Round(valueMoney / converter.Usd, 2));
                         }
                         else
                         {
@@ -102,7 +79,7 @@ namespace TeachMeSkills.DotNet.Task5
                         if (isParsed)
                         {
                             Console.ForegroundColor = ConsoleColor.Blue;
-                            Console.WriteLine("Conversion {0:00.00} EUR -> BYN {1:00.00}", valueMoney, valueMoney / converter.Eur);
+                            Console.WriteLine("Conversion {0:00.00} EUR -> BYN {1:00.00}", valueMoney, Math.Round(valueMoney / converter.Eur, 2));
                             Console.ForegroundColor = ConsoleColor.White;
                         }
                         else
@@ -119,7 +96,7 @@ namespace TeachMeSkills.DotNet.Task5
                         if (isParsed)
                         {
                             Console.ForegroundColor = ConsoleColor.Blue;
-                            Console.WriteLine("Conversion {0:00.00} RUB -> BYN {1:00.00}", valueMoney, valueMoney / converter.Rub);
+                            Console.WriteLine("Conversion {0:00.00} RUB -> BYN {1:00.00}", valueMoney, Math.Round(valueMoney / converter.Rub,2 ));
                             Console.ForegroundColor = ConsoleColor.White;
                         }
                         else
@@ -129,7 +106,7 @@ namespace TeachMeSkills.DotNet.Task5
                             Console.ForegroundColor = ConsoleColor.White;
                             isParsed = false;
                         }
-                        Console.WriteLine("Conversion {0:00.00} RUB -> BYN {1:00.00}", valueMoney, valueMoney / converter.Rub);
+                        Console.WriteLine("Conversion {0:00.00} RUB -> BYN {1:00.00}", valueMoney, Math.Round(valueMoney / converter.Rub, 2));
                         break;
                     default:
                         Console.ForegroundColor = ConsoleColor.Red;
