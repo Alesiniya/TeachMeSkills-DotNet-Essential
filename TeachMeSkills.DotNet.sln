@@ -48,6 +48,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.Task26
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.Task27", "src\TeachMeSkills.DotNet.Task27\TeachMeSkills.DotNet.Task27.csproj", "{23B97410-1E09-4439-8220-5DE1DE7E4C34}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeachMeSkills.DotNet.Task28", "src\TeachMeSkills.DotNet.Task28\TeachMeSkills.DotNet.Task28.csproj", "{D5F12B9E-DE65-41DA-8473-AFE7A10E8D1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -126,6 +128,10 @@ Global
 		{23B97410-1E09-4439-8220-5DE1DE7E4C34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23B97410-1E09-4439-8220-5DE1DE7E4C34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23B97410-1E09-4439-8220-5DE1DE7E4C34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F12B9E-DE65-41DA-8473-AFE7A10E8D1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F12B9E-DE65-41DA-8473-AFE7A10E8D1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F12B9E-DE65-41DA-8473-AFE7A10E8D1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F12B9E-DE65-41DA-8473-AFE7A10E8D1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -149,6 +155,7 @@ Global
 		{48ED85FB-551E-4060-BA89-58CD0DB0A9B9} = {F2E7A0A3-E35B-4891-A97C-AABB0CCE2DDB}
 		{AC369DD8-5380-4852-B1DD-D59AC330C124} = {F2E7A0A3-E35B-4891-A97C-AABB0CCE2DDB}
 		{23B97410-1E09-4439-8220-5DE1DE7E4C34} = {F2E7A0A3-E35B-4891-A97C-AABB0CCE2DDB}
+		{D5F12B9E-DE65-41DA-8473-AFE7A10E8D1C} = {F2E7A0A3-E35B-4891-A97C-AABB0CCE2DDB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AB361F5D-A586-489F-BE2A-9BA764BA63B1}
